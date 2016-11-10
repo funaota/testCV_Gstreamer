@@ -1,0 +1,13 @@
+prefix=/Library/Frameworks/GStreamer.framework/Versions/1.0
+exec_prefix=${prefix}
+libdir=/Library/Frameworks/GStreamer.framework/Versions/1.0/lib
+includedir=${prefix}/include/gstreamer-1.0
+pluginsdir=/Library/Frameworks/GStreamer.framework/Versions/1.0/lib/gstreamer-1.0
+
+
+Name: GStreamer Bad Plugin libraries
+Description: Streaming media framework, bad plugins libraries
+Requires: gstreamer-1.0
+Version: 1.9.90
+Libs: -L${libdir}
+Cflags: -I${includedir}
