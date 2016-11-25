@@ -224,6 +224,7 @@ dependencies: /Users/takujifunao/Desktop/testCVGL/testCVGL/main.mm \
   /usr/local/Cellar/opencv3/3.1.0_3/include/opencv2/core/utility.hpp \
   /usr/local/Cellar/opencv3/3.1.0_3/include/opencv2/core/core_c.h \
   /usr/local/Cellar/opencv3/3.1.0_3/include/opencv2/core/types_c.h \
+  /Library/Frameworks/GStreamer.framework/Versions/1.0/Headers/FLAC/assert.h \
   /usr/local/Cellar/opencv3/3.1.0_3/include/opencv2/core/optim.hpp \
   /usr/local/Cellar/opencv3/3.1.0_3/include/opencv2/videoio/videoio_c.h \
   /usr/local/Cellar/opencv3/3.1.0_3/include/opencv2/highgui.hpp \

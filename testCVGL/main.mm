@@ -10,6 +10,7 @@
 #include "appsink.hpp"
 #include <stdio.h>
 #include <iostream>
+#include <gst/gst.h>
 
 int main(int argc, char * argv[]) {
     
