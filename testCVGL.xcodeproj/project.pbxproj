@@ -14,18 +14,15 @@
 		657896611DC32E480041F0F0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896601DC32E480041F0F0 /* Security.framework */; };
 		657896631DC32E690041F0F0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896621DC32E690041F0F0 /* OpenGL.framework */; };
 		657896651DC32E6E0041F0F0 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896641DC32E6E0041F0F0 /* GLKit.framework */; };
-		6578966B1DC32F280041F0F0 /* libopencv_highgui.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6578966A1DC32F280041F0F0 /* libopencv_highgui.3.1.0.dylib */; };
-		6578966D1DC32F390041F0F0 /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6578966C1DC32F390041F0F0 /* libopencv_core.3.1.0.dylib */; };
-		6578966F1DC32F430041F0F0 /* libopencv_videoio.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6578966E1DC32F430041F0F0 /* libopencv_videoio.3.1.0.dylib */; };
-		657896711DC32F5B0041F0F0 /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896701DC32F5B0041F0F0 /* libopencv_imgproc.3.1.0.dylib */; };
 		657896731DC331DA0041F0F0 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896721DC331DA0041F0F0 /* libc++.tbd */; };
 		657896751DC331E70041F0F0 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896741DC331E70041F0F0 /* libz.1.2.5.tbd */; };
 		657896771DC3329C0041F0F0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896761DC3329C0041F0F0 /* QuartzCore.framework */; };
-		6578967B1DC33A620041F0F0 /* libgstreamer-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6578967A1DC33A620041F0F0 /* libgstreamer-1.0.0.dylib */; };
-		6578967D1DC33A840041F0F0 /* libgstreamer-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6578967C1DC33A840041F0F0 /* libgstreamer-1.0.dylib */; };
-		657896831DC34A470041F0F0 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657896821DC34A470041F0F0 /* GStreamer.framework */; };
-		65A1427C1DD46E650074954B /* appsink.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65A1427A1DD46E650074954B /* appsink.mm */; };
 		65A1427F1DD46E750074954B /* fakesink.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65A1427D1DD46E750074954B /* fakesink.mm */; };
+		755376AE1E28ACDD00A32D18 /* GStreamer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755376AD1E28ACDD00A32D18 /* GStreamer.framework */; };
+		757C5D941E28A53A00DD355E /* libopencv_core.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 757C5D931E28A53A00DD355E /* libopencv_core.3.2.0.dylib */; };
+		757C5D961E28A54700DD355E /* libopencv_videoio.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 757C5D951E28A54700DD355E /* libopencv_videoio.3.2.0.dylib */; };
+		757C5D981E28A56300DD355E /* libopencv_imgproc.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 757C5D971E28A56300DD355E /* libopencv_imgproc.3.2.0.dylib */; };
+		757C5D9A1E28A57500DD355E /* libopencv_highgui.3.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 757C5D991E28A57500DD355E /* libopencv_highgui.3.2.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,20 +46,16 @@
 		657896601DC32E480041F0F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		657896621DC32E690041F0F0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		657896641DC32E6E0041F0F0 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		6578966A1DC32F280041F0F0 /* libopencv_highgui.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_highgui.3.1.0.dylib; sourceTree = "<group>"; };
-		6578966C1DC32F390041F0F0 /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_core.3.1.0.dylib; sourceTree = "<group>"; };
-		6578966E1DC32F430041F0F0 /* libopencv_videoio.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_videoio.3.1.0.dylib; sourceTree = "<group>"; };
-		657896701DC32F5B0041F0F0 /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopencv_imgproc.3.1.0.dylib; sourceTree = "<group>"; };
 		657896721DC331DA0041F0F0 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		657896741DC331E70041F0F0 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		657896761DC3329C0041F0F0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		6578967A1DC33A620041F0F0 /* libgstreamer-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgstreamer-1.0.0.dylib"; sourceTree = "<group>"; };
-		6578967C1DC33A840041F0F0 /* libgstreamer-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgstreamer-1.0.dylib"; sourceTree = "<group>"; };
-		657896821DC34A470041F0F0 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GStreamer.framework; sourceTree = "<group>"; };
-		65A1427A1DD46E650074954B /* appsink.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = appsink.mm; sourceTree = "<group>"; };
-		65A1427B1DD46E650074954B /* appsink.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = appsink.hpp; sourceTree = "<group>"; };
 		65A1427D1DD46E750074954B /* fakesink.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = fakesink.mm; sourceTree = "<group>"; };
 		65A1427E1DD46E750074954B /* fakesink.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fakesink.hpp; sourceTree = "<group>"; };
+		755376AD1E28ACDD00A32D18 /* GStreamer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GStreamer.framework; sourceTree = "<group>"; };
+		757C5D931E28A53A00DD355E /* libopencv_core.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.2.0.dylib; path = ../../../../../usr/local/Cellar/opencv3/3.2.0/lib/libopencv_core.3.2.0.dylib; sourceTree = "<group>"; };
+		757C5D951E28A54700DD355E /* libopencv_videoio.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.3.2.0.dylib; path = ../../../../../usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videoio.3.2.0.dylib; sourceTree = "<group>"; };
+		757C5D971E28A56300DD355E /* libopencv_imgproc.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.2.0.dylib; path = ../../../../../usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgproc.3.2.0.dylib; sourceTree = "<group>"; };
+		757C5D991E28A57500DD355E /* libopencv_highgui.3.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.2.0.dylib; path = ../../../../../usr/local/Cellar/opencv3/3.2.0/lib/libopencv_highgui.3.2.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,18 +67,16 @@
 				657896771DC3329C0041F0F0 /* QuartzCore.framework in Frameworks */,
 				657896751DC331E70041F0F0 /* libz.1.2.5.tbd in Frameworks */,
 				657896731DC331DA0041F0F0 /* libc++.tbd in Frameworks */,
-				6578967B1DC33A620041F0F0 /* libgstreamer-1.0.0.dylib in Frameworks */,
-				6578966F1DC32F430041F0F0 /* libopencv_videoio.3.1.0.dylib in Frameworks */,
+				757C5D9A1E28A57500DD355E /* libopencv_highgui.3.2.0.dylib in Frameworks */,
+				755376AE1E28ACDD00A32D18 /* GStreamer.framework in Frameworks */,
+				757C5D961E28A54700DD355E /* libopencv_videoio.3.2.0.dylib in Frameworks */,
+				757C5D981E28A56300DD355E /* libopencv_imgproc.3.2.0.dylib in Frameworks */,
+				757C5D941E28A53A00DD355E /* libopencv_core.3.2.0.dylib in Frameworks */,
 				657896651DC32E6E0041F0F0 /* GLKit.framework in Frameworks */,
-				657896711DC32F5B0041F0F0 /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
 				657896631DC32E690041F0F0 /* OpenGL.framework in Frameworks */,
-				657896831DC34A470041F0F0 /* GStreamer.framework in Frameworks */,
-				6578966B1DC32F280041F0F0 /* libopencv_highgui.3.1.0.dylib in Frameworks */,
 				657896611DC32E480041F0F0 /* Security.framework in Frameworks */,
 				6578965F1DC32E420041F0F0 /* libstdc++.6.0.9.tbd in Frameworks */,
 				6578965D1DC32E3B0041F0F0 /* libresolv.9.tbd in Frameworks */,
-				6578966D1DC32F390041F0F0 /* libopencv_core.3.1.0.dylib in Frameworks */,
-				6578967D1DC33A840041F0F0 /* libgstreamer-1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				657896541DC32E010041F0F0 /* main.mm */,
-				65A1427A1DD46E650074954B /* appsink.mm */,
-				65A1427B1DD46E650074954B /* appsink.hpp */,
 				65A1427D1DD46E750074954B /* fakesink.mm */,
 				65A1427E1DD46E750074954B /* fakesink.hpp */,
 			);
@@ -124,19 +113,17 @@
 		6578965B1DC32E3B0041F0F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6564CCC41DDDBDE6006137F7 /* VideoToolbox.framework */,
-				657896821DC34A470041F0F0 /* GStreamer.framework */,
-				657896761DC3329C0041F0F0 /* QuartzCore.framework */,
+				757C5D991E28A57500DD355E /* libopencv_highgui.3.2.0.dylib */,
+				757C5D971E28A56300DD355E /* libopencv_imgproc.3.2.0.dylib */,
+				757C5D951E28A54700DD355E /* libopencv_videoio.3.2.0.dylib */,
+				757C5D931E28A53A00DD355E /* libopencv_core.3.2.0.dylib */,
 				657896741DC331E70041F0F0 /* libz.1.2.5.tbd */,
 				657896721DC331DA0041F0F0 /* libc++.tbd */,
 				6578965E1DC32E420041F0F0 /* libstdc++.6.0.9.tbd */,
 				6578965C1DC32E3B0041F0F0 /* libresolv.9.tbd */,
-				657896701DC32F5B0041F0F0 /* libopencv_imgproc.3.1.0.dylib */,
-				6578966E1DC32F430041F0F0 /* libopencv_videoio.3.1.0.dylib */,
-				6578966C1DC32F390041F0F0 /* libopencv_core.3.1.0.dylib */,
-				6578966A1DC32F280041F0F0 /* libopencv_highgui.3.1.0.dylib */,
-				6578967A1DC33A620041F0F0 /* libgstreamer-1.0.0.dylib */,
-				6578967C1DC33A840041F0F0 /* libgstreamer-1.0.dylib */,
+				755376AD1E28ACDD00A32D18 /* GStreamer.framework */,
+				6564CCC41DDDBDE6006137F7 /* VideoToolbox.framework */,
+				657896761DC3329C0041F0F0 /* QuartzCore.framework */,
 				657896641DC32E6E0041F0F0 /* GLKit.framework */,
 				657896621DC32E690041F0F0 /* OpenGL.framework */,
 				657896601DC32E480041F0F0 /* Security.framework */,
@@ -201,7 +188,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A1427C1DD46E650074954B /* appsink.mm in Sources */,
 				657896551DC32E010041F0F0 /* main.mm in Sources */,
 				65A1427F1DD46E750074954B /* fakesink.mm in Sources */,
 			);
@@ -313,6 +299,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/usr/local/Cellar/opencv3/3.2.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -334,6 +321,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					/usr/local/Cellar/opencv3/3.2.0/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

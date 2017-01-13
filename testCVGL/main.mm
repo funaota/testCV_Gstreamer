@@ -7,7 +7,6 @@
 //
 
 #include "fakesink.hpp"
-#include "appsink.hpp"
 #include <stdio.h>
 #include <iostream>
 #include <gst/gst.h>
@@ -15,16 +14,13 @@
 int main(int argc, char * argv[]) {
     
     gst_init(&argc, &argv);
-   
-   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-      fake_mainGst();
-       	// app_mainGst(); 
-   });
-//    
-   while(1){
-   		createCVWin();
-       	// app_createCVWin();
-   }
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        fake_mainGst();
+    });
+    
+    while(1){
+        createCVWin();
+    }
     
     return 0;
 }

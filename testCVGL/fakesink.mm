@@ -21,48 +21,31 @@ struct _GstGLBuffer
 
 GLuint omniTex;
 guint8 *ddata;
+cv::Mat mRGB(720,1280,CV_8UC4);
 
 void onGstBuffer (GstElement * fakesink, GstBuffer * buf, GstPad * pad, gpointer data){
     
-    NSLog(@"////////%d", gst_buffer_get_video_meta(buf));
     
-//    GstVideoMeta* videoinfo = gst_buffer_get_video_meta(buf);
-//    if(videoinfo){
-//        NSLog(@"width: %d, height: %d",videoinfo->width, videoinfo->height);
-//        NSLog(@"format: %d",videoinfo->format);
-//        NSLog(@"format: %d", GST_VIDEO_FORMAT_NV12);
-//        GstMapInfo map;
-//        gst_buffer_map(videoinfo->buffer, &map, GST_MAP_READ);
-//        ddata = map.data;
-//        gst_buffer_unmap(buf, &map);
-//        return;
-//    }
-    
-        if(buf){
-            GstMapInfo map;
-            gst_buffer_map(buf, &map, GST_MAP_READ);
-            ddata = map.data;
-            gst_buffer_unmap(buf, &map);
-        }
-    
-}
-
-
-void createCVWin(){
-    
-    if(ddata){
+    GstVideoMeta* videoinfo = gst_buffer_get_video_meta(buf);
+    if(videoinfo){
+        GstMapInfo map;
+        gst_buffer_map(videoinfo->buffer, &map, GST_MAP_READ);
         
-        cv::Mat mYUV(720 + 720/2,1280,CV_8UC1,ddata);
-        cv::Mat mRGB(720,1280,CV_8UC4);
+        cv::Mat mYUV(720 + 720/2,1280,CV_8UC1,map.data);
         cv::cvtColor(mYUV, mRGB, CV_YUV2BGRA_NV12);
         
-        cv::namedWindow("D", CV_WINDOW_AUTOSIZE);
-        cv::imshow("D", mRGB);
-        cv::waitKey(10);
-        
+        gst_buffer_unmap(buf, &map);
+        mYUV.release();
     }
     
 }
+
+void createCVWin(){
+    cv::namedWindow("D", CV_WINDOW_AUTOSIZE);
+    cv::imshow("D", mRGB);
+    cv::waitKey(10);
+}
+
 
 void fake_mainGst(){
     
@@ -75,8 +58,8 @@ void fake_mainGst(){
     GstState state;
     
     loop = g_main_loop_new (NULL, FALSE);
-    
-//    pipeline = GST_PIPELINE (gst_parse_launch("udpsrc port=5003 caps=application/x-rtp,media=(string)video,payload=(int)96,clock-rate=(int)90000,encoding-name=H264 ! rtph264depay ! video/x-h264 ! h264parse ! video/x-h264 ! vtdec ! fakesink sync=1", &error));
+   
+    pipeline = GST_PIPELINE (gst_parse_launch("udpsrc port=5003 caps=application/x-rtp,media=(string)video,payload=(int)96,clock-rate=(int)90000,encoding-name=H264 ! rtpjitterbuffer ! rtph264depay ! video/x-h264 ! h264parse ! video/x-h264 ! vtdec ! fakesink sync=1", NULL));
     
     if (error) {
         g_debug(error->message);
